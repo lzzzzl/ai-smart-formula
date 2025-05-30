@@ -44,7 +44,7 @@ DEBUG=false
 SECRET_KEY={secret_key}
 
 # ==================== 服务器配置 ====================
-HOST=0.0.0.0
+HOST=127.0.0.1
 PORT=8000
 RELOAD=false
 
@@ -135,7 +135,7 @@ DEBUG=false
 SECRET_KEY=your_secret_key_here
 
 # ==================== 服务器配置 ====================
-HOST=0.0.0.0
+HOST=127.0.0.1
 PORT=8000
 RELOAD=false
 

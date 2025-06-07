@@ -1,0 +1,34 @@
+{
+    // Python 相关配置
+    "python.defaultInterpreterPath": "python",
+
+    // 格式化相关配置
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+
+    // Black 格式化器配置 - 修改为79字符以匹配您的linter
+    "black-formatter.args": [
+        "--line-length=79",
+        "--target-version=py38"
+    ],
+
+    // 通用编辑器配置
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
+
+    // 文件保存相关
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    // 禁用其他可能冲突的格式化工具
+    "python.formatting.provider": "none",
+    "python.linting.enabled": false
+}
